@@ -1,0 +1,53 @@
+{
+  "properties": [
+    {
+      "identifier": "temp",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "tempThreshold",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "bmeAlarmState",
+      "dataType": {
+        "type": "bool"
+      }
+    },
+    {
+      "identifier": "humi",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "pres",
+      "dataType": {
+        "type": "int"
+      }
+    }
+  ],
+  "events": [
+    {
+      "identifier": "Alarm",
+      "type": "alert"
+    }
+  ],
+  "services": [
+    {
+      "identifier": "tempThresholdChange",
+      "inputData": [
+        {
+          "identifier": "th",
+          "dataType": {
+            "type": "int"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "identifier": "temp",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "humi",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "pres",
+      "dataType": {
+        "type": "int"
+      }
+    }
+  ]
+}

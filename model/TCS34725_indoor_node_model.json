@@ -1,0 +1,41 @@
+{
+  "properties": [
+    {
+      "identifier": "lux",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "luxThreshold",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "luxStatus",
+      "dataType": {
+        "type": "bool"
+      }
+    }
+  ],
+  "events": [
+    {
+      "identifier": "luxAlarm",
+      "type": "alert"
+    }
+  ],
+  "services": [
+    {
+      "identifier": "luxThresholdChange",
+      "inputData": [
+        {
+          "identifier": "luxThreshold",
+          "dataType": {
+            "type": "int"
+          }
+        }
+      ]
+    }
+  ]
+}

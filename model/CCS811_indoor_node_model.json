@@ -1,0 +1,41 @@
+{
+  "properties": [
+    {
+      "identifier": "CO2",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "co2Threshold",
+      "dataType": {
+        "type": "int"
+      }
+    },
+    {
+      "identifier": "alarmState",
+      "dataType": {
+        "type": "bool"
+      }
+    }
+  ],
+  "events": [
+    {
+      "identifier": "Alarm",
+      "type": "alert"
+    }
+  ],
+  "services": [
+    {
+      "identifier": "thresholdChange",
+      "inputData": [
+        {
+          "identifier": "co2Threshold",
+          "dataType": {
+            "type": "int"
+          }
+        }
+      ]
+    }
+  ]
+}
